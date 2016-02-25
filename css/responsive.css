@@ -1,0 +1,374 @@
+p {
+  margin-top: 20px;
+  font-family: Calibri;
+  font-size: 0.95em;
+  line-height: 1.4em;
+}
+
+blockquote {
+  font-family: Calibri;
+  font-size: 0.95em;
+  line-height: 1.4em;
+  font-style: italic;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  border-radius: 100%;
+  position: relative;
+  left: 50%;
+  margin: 20px 0 40px -100px;
+}
+
+.circle a {
+display: block;
+width: 200px;
+height: 200px;
+}
+
+.circlemobilewrapper {
+  display: none;
+}
+
+.bodycopyfirst { 
+  margin-top: 50px;
+} 
+
+#left00 {
+  opacity: 0;
+}
+
+#left01 {
+  position: fixed;
+  left: -200px;
+  top: 390px;
+}
+
+#left02 {
+  position: fixed;
+  left: -200px;
+  top: 25px;
+}
+
+#left03 {
+  position: fixed;
+  left: -200px;
+  top: 280px;
+}
+
+#left04 {
+  position: fixed;
+  left: -200px;
+  top: 160px;
+}
+
+#right01 {
+  position: fixed;
+  left: 1400px;
+  top: -75px;
+  background: url('../images/object-sweetie-200.jpg');
+}
+
+#right02 {
+  position: fixed;
+  left: 1400px;
+  top: 100px;
+  background: url('../images/object-lettera-200.jpg');
+}
+
+#right03 {
+  position: fixed;
+  left: 1400px;
+  top: 300px;
+  background: url('../images/object-jfk-200.jpg');
+}
+
+#right04 {
+  position: fixed;
+  left: 1400px;
+  top: 450px;
+  background: url('../images/object-readymade-200.jpg');
+}
+
+.circle.mobileblank {
+  opacity: 0;
+  height: 1px;
+  width: 1px;
+}
+
+#circlemobile01 {
+  position: relative;
+  left: -150px;
+}
+
+#circlemobile02 {
+  position: relative;
+  left: -150px;
+}
+
+.invisible {
+  display: none;
+}
+
+.title { 
+  position: fixed;
+  z-index: 999;
+} 
+
+.title a {
+display: block;
+width: 100%;
+height: 100%;
+}
+
+
+/* ----------------- Start Grid for full size ----------------- */
+
+@media (min-width: 900px) {
+
+  .container {
+    overflow: hidden;
+    position: relative;
+    width: 100%; /* max width of content */
+    margin: 0 auto;
+  box-sizing: border-box; 
+}
+
+  .column, .columns {
+    margin-left: 3%; /* column gutter */
+    float: left;
+    box-sizing: border-box;
+    }    
+  
+  .column:first-child, .columns:first-child {
+    margin-left: 0; } /* prevents first column from acquiring a gutter on its left */
+
+  .one.column,
+  .one.columns                    { width: 8.44%; }
+  .two.columns                    { width: 19.88%; }
+  .three.columns                  { width: 31.33%; }
+  .four.columns                   { width: 42.77%; }
+  .five.columns                   { width: 54.22%; }
+  .six.columns                    { width: 65.66%; }
+  .seven.columns                  { width: 77.11%; }
+  .eight.columns                  { width: 88.55%; }
+  .nine.columns                    { width: 100%; margin-left: 0; }
+
+.title { 
+  height: 50px;
+  width: 300px;
+  top: 50%;
+  left: 42.77%;
+  margin: -30px 0 0 -300px;
+  background: url(../images/calling-collect-title-300x50-trans.png);
+} 
+
+}
+/* ----------------- End Grid for full size ----------------- */
+
+
+
+/* ----------------- Start Grid for medium break point ----------------- */
+
+@media (min-width: 735px) and (max-width: 899px) {
+
+.container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 0 50px 0 0;
+  box-sizing: border-box; 
+}
+
+.column, .columns {
+  width: 48.5%;
+  margin-left: 3%; /* column gutter */
+  float: left;
+  box-sizing: border-box;
+}
+.column, .columns:nth-of-type(odd) {
+  margin-left: 0;
+}
+
+.title { 
+  height: 50px;
+  width: 300px;
+  top: 50%;
+  left: 42.77%;
+  margin: -30px 0 0 -300px;
+  background: url(../images/calling-collect-title-300x50-trans.png);
+} 
+
+.bodycopy { 
+  margin: 0 30px 0 0;
+} 
+
+.bodycopyfirst { 
+  margin-top: 50px;
+} 
+
+blockquote {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+}
+
+/* ----------------- End Grid for medium break point ----------------- */
+
+
+/* ----------------- Start Grid for small break point ----------------- */
+
+@media (min-width: 550px) and (max-width: 734px) {
+
+.container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 0 50px 0 0;
+  box-sizing: border-box; 
+}
+
+#drop {
+  display: none;
+}
+
+.column, .columns {
+  width: 48.5%;
+  margin-left: 3%; /* column gutter */
+  float: left;
+  box-sizing: border-box;
+}
+.column, .columns:nth-of-type(odd) {
+  margin-left: 0;
+}
+
+.title { 
+  height: 93px;
+  width: 150px;
+  top: 50%;
+  left: 42.77%;
+  margin: -48px 0 0 -150px;
+  background: url(../images/calling-collect-title-150x93-trans.png);
+} 
+
+.bodycopy { 
+  margin: 0 15px 0 0;
+} 
+
+.bodycopyfirst { 
+  margin-top: 50px;
+} 
+
+blockquote {
+  margin: 0 0 0 0;
+}
+
+
+}
+
+/* ----------------- End Grid for small break point ----------------- */
+
+
+/* ----------------- Start Grid for mobile ----------------- */
+
+@media (max-width: 549px) {
+
+.container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box; 
+}
+
+.circle.left {
+  display: none;
+}
+
+.circle.right {
+  display: none;
+}
+
+.circle.mobile {
+  display: inline-block;
+  white-space: nowrap;
+  width: 150px;
+  height: 150px;
+  left: auto;
+  margin: 15px 30px 5px 0;  
+}
+
+.circlemobilewrapper {
+  width: 100%;
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+#circlemobilewrapperfirst {
+  margin-top: 40px;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  border-radius: 100%;
+  position: relative;
+  left: 50%;
+  margin: 20px 0 40px -100px;
+}
+
+.column, .columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.title { 
+  height: 50px;
+  width: 300px;
+  top: 30px;
+  left: 50px;
+  margin: 0;
+  background: url(../images/calling-collect-title-300x50-trans.png);
+} 
+
+blockquote {
+  margin: 0;
+}
+
+.bodycopy { 
+  margin: 0 50px 0 50px;
+} 
+
+.bodycopyfirst { 
+  margin: 0 50px 0 50px;
+} 
+
+.circle.left {
+  display: none;
+}
+
+
+
+}
+
+
+/* ----------------- End Grid for mobile ----------------- */
+
+
+
+
+/* ----------------- Misc Grid Commands ----------------- */
+
+/* Self Clearing Goodness: Fixes Issues with Float: Left; */
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
