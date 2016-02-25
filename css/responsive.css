@@ -93,9 +93,9 @@ height: 200px;
 }
 
 .circle.mobileblank {
+  position: relative;
   opacity: 0;
   height: 1px;
-  width: 1px;
 }
 
 #circlemobile01 {
@@ -104,9 +104,61 @@ height: 200px;
 }
 
 #circlemobile02 {
+  position: absolute;
+  left: -150px;
+}
+
+#circlemobile03 {
   position: relative;
   left: -150px;
 }
+
+#circlemobile04 {
+  position: absolute;
+  left: -150px;
+}
+
+#circlemobile05 {
+  position: relative;
+  left: -150px;
+}
+
+#circlemobile06 {
+  position: absolute;
+  left: -150px;
+}
+
+#circlemobile07 {
+  position: relative;
+  left: -150px;
+}
+
+#circlemobile08 {
+  position: absolute;
+  left: -150px;
+}
+
+#circlemobile09 {
+  position: relative;
+  left: -150px;
+}
+
+#circlemobile10 {
+  position: absolute;
+  left: -150px;
+}
+
+#circlemobile11 {
+  position: relative;
+  left: -150px;
+}
+
+#circlemobile12 {
+  position: absolute;
+  left: -150px;
+}
+
+
 
 .invisible {
   display: none;
@@ -305,11 +357,10 @@ blockquote {
   width: 100%;
   overflow: hidden;
   display: inline-block;
-  white-space: nowrap;
 }
 
 #circlemobilewrapperfirst {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .circle {
