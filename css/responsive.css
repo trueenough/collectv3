@@ -15,7 +15,7 @@ blockquote {
 .circle {
   width: 200px;
   height: 200px;
-  background-color: orange;
+  border: 5px solid white;
   border-radius: 100%;
   position: relative;
   left: 50%;
@@ -28,151 +28,182 @@ width: 200px;
 height: 200px;
 }
 
-.circlemobilewrapper {
-  display: none;
+.bodycopyfirst { 
+  margin: 50px 0 50px 0;
+} 
+
+.left {
+  position: fixed;
+  left: -200px;
 }
 
-.bodycopyfirst { 
-  margin-top: 50px;
-} 
+.right {
+  position: fixed;
+  left: 1400px;
+}
+
+/* I had to include #left00 at 0% opacity because without something in the first column the column would not render, and the text would jump to the left side of the screen.*/
 
 #left00 {
   opacity: 0;
 }
 
+
+/*I used the circle with ID #left01 as an experiment to randomize the image. I didn't want to randomize ALL of the circles, because I did not want the chance of seeing multiple copies of any one image at once. We talked in class about the possibility of using if/then to avoid that. Rather than get into the complexity of that, another option I thought of would be to create arrays for each circle, with each array offering different image options. That way, any one specific circle could have a random selection of a small pool of images, creating more variety without the possibility of duplicates visible at once. It's not truly random, but gives a sense of randomness.
+*/
+
 #left01 {
-  position: fixed;
-  left: -200px;
-  top: 390px;
+  background-color: white;
 }
 
 #left02 {
-  position: fixed;
-  left: -200px;
-  top: 25px;
+  background: url('../images/object-atari-200.png');
 }
 
 #left03 {
-  position: fixed;
-  left: -200px;
-  top: 280px;
+  background: url('../images/object-pickle-200.png');
 }
 
 #left04 {
-  position: fixed;
-  left: -200px;
-  top: 160px;
+  background: url('../images/object-juicysalif-200.png');
 }
 
 #right01 {
-  position: fixed;
-  left: 1400px;
-  top: -75px;
-  background: url('../images/object-sweetie-200.jpg');
+  background: url('../images/object-sweetie-200.png');
 }
 
 #right02 {
-  position: fixed;
-  left: 1400px;
-  top: 100px;
-  background: url('../images/object-lettera-200.jpg');
+  background: url('../images/object-lettera-200.png');
 }
 
 #right03 {
-  position: fixed;
-  left: 1400px;
-  top: 300px;
-  background: url('../images/object-jfk-200.jpg');
+  background: url('../images/object-jfk-200.png');
 }
 
 #right04 {
-  position: fixed;
-  left: 1400px;
-  top: 450px;
-  background: url('../images/object-readymade-200.jpg');
+  background: url('../images/object-readymade-200.png');
 }
 
-.circle.mobileblank {
+
+.popup {
+  display: none;
+  position: fixed;
+  width: 35%;
+  height: 80%;
+  top: 6%;
+  left: 3%;
+  padding: 20px;
+  background: white;
+  border: 5px solid gray;
+  border-radius: 20px;
+  z-index: 999;
+}
+
+.popup_img {
+  height: 350px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.popup_txt p {
+  margin: 30px 0 10px 0;
+  font-family: Calibri;
+  font-size: 0.8em;
+  line-height: 1.1em;
+}
+
+#popup-lettera-img {
+  background: url('../images/object-lettera-350.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#popup-atari-img {
+  background: url('../images/object-atari-300.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#popup-donutphone-img {
+  background: url('../images/object-donutphone-350.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#popup-jfk-img {
+  background: url('../images/object-jfk-250.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#popup-juicysalif-img {
+  background: url('../images/object-juicysalif-250.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#popup-pickle-img {
+  background: url('../images/object-pickle-285.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#popup-praxis-img {
+  background: url('../images/object-praxis-350.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#popup-readymade-img {
+  background: url('../images/object-readymade-220.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#popup-sweetie-img {
+  background: url('../images/object-sweetie-300.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#popup-teacup-img {
+  background: url('../images/object-teacup-300.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
+.placeholder {
+  width: 1px;
+  height: 1px;
+  background-color: white;
+}
+
+.circlemobilewrapper {
+  display: none;
+}
+
+.circlemobileblank {
   position: relative;
   opacity: 0;
   height: 1px;
 }
 
-#circlemobile01 {
-  position: relative;
-  left: -150px;
-}
-
-#circlemobile02 {
-  position: absolute;
-  left: -150px;
-}
-
-#circlemobile03 {
-  position: relative;
-  left: -150px;
-}
-
-#circlemobile04 {
-  position: absolute;
-  left: -150px;
-}
-
-#circlemobile05 {
-  position: relative;
-  left: -150px;
-}
-
-#circlemobile06 {
-  position: absolute;
-  left: -150px;
-}
-
-#circlemobile07 {
-  position: relative;
-  left: -150px;
-}
-
-#circlemobile08 {
-  position: absolute;
-  left: -150px;
-}
-
-#circlemobile09 {
-  position: relative;
-  left: -150px;
-}
-
-#circlemobile10 {
-  position: absolute;
-  left: -150px;
-}
-
-#circlemobile11 {
-  position: relative;
-  left: -150px;
-}
-
-#circlemobile12 {
-  position: absolute;
-  left: -150px;
-}
-
-
 
 .invisible {
-  display: none;
+  opacity: 0;
 }
 
 .title { 
   position: fixed;
-  z-index: 999;
+  z-index: 998;
 } 
 
 .title a {
-display: block;
-width: 100%;
-height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -220,8 +251,6 @@ height: 100%;
 }
 /* ----------------- End Grid for full size ----------------- */
 
-
-
 /* ----------------- Start Grid for medium break point ----------------- */
 
 @media (min-width: 735px) and (max-width: 899px) {
@@ -266,10 +295,9 @@ blockquote {
   margin-right: 20px;
 }
 
+
 }
-
 /* ----------------- End Grid for medium break point ----------------- */
-
 
 /* ----------------- Start Grid for small break point ----------------- */
 
@@ -320,9 +348,7 @@ blockquote {
 
 
 }
-
 /* ----------------- End Grid for small break point ----------------- */
-
 
 /* ----------------- Start Grid for mobile ----------------- */
 
@@ -336,21 +362,32 @@ blockquote {
   box-sizing: border-box; 
 }
 
-.circle.left {
+.circle {
   display: none;
 }
 
-.circle.right {
-  display: none;
-}
-
-.circle.mobile {
+.circlemobile {
+  position: relative;
   display: inline-block;
   white-space: nowrap;
   width: 150px;
   height: 150px;
-  left: auto;
+  left: -150px;
+  border-radius: 100%;
   margin: 15px 30px 5px 0;  
+  background-size: 150px 150px;
+}
+
+.circlemobile2 {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  width: 150px;
+  height: 150px;
+  left: -150px;
+  border-radius: 100%;
+  margin: 15px 30px 5px 0;  
+  background-size: 150px 150px;
 }
 
 .circlemobilewrapper {
@@ -360,17 +397,7 @@ blockquote {
 }
 
 #circlemobilewrapperfirst {
-  margin-top: 30px;
-}
-
-.circle {
-  width: 200px;
-  height: 200px;
-  background-color: orange;
-  border-radius: 100%;
-  position: relative;
-  left: 50%;
-  margin: 20px 0 40px -100px;
+  margin-top: 15px;
 }
 
 .column, .columns {
@@ -397,24 +424,14 @@ blockquote {
 } 
 
 .bodycopyfirst { 
-  margin: 0 50px 0 50px;
+  margin: 100px 50px 0 50px;
 } 
 
-.circle.left {
-  display: none;
-}
-
-
 
 }
-
-
 /* ----------------- End Grid for mobile ----------------- */
 
 
-
-
-/* ----------------- Misc Grid Commands ----------------- */
 
 /* Self Clearing Goodness: Fixes Issues with Float: Left; */
 .container:after,
