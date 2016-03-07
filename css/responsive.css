@@ -39,7 +39,7 @@ height: 200px;
 
 .right {
   position: fixed;
-  left: 1400px;
+  left: 9999px;
 }
 
 /* I had to include #left00 at 0% opacity because without something in the first column the column would not render, and the text would jump to the left side of the screen.*/
@@ -48,16 +48,19 @@ height: 200px;
   opacity: 0;
 }
 
-
-/*I used the circle with ID #left01 as an experiment to randomize the image. I didn't want to randomize ALL of the circles, because I did not want the chance of seeing multiple copies of any one image at once. We talked in class about the possibility of using if/then to avoid that. Rather than get into the complexity of that, another option I thought of would be to create arrays for each circle, with each array offering different image options. That way, any one specific circle could have a random selection of a small pool of images, creating more variety without the possibility of duplicates visible at once. It's not truly random, but gives a sense of randomness.
-*/
+/*I used the circle with ID #left01 as an experiment to randomize the image. I didn't want to randomize ALL of the circles, because I did not want the chance of seeing multiple copies of any one image at once. We talked in class about the possibility of using if/then to avoid that. Rather than get into the complexity of that, another option I thought of would be to create arrays for each circle, with each array offering different image options. That way, any one specific circle could have a random selection of a small pool of images, creating more variety without the possibility of duplicates visible at once. It's not truly random, but gives a sense of randomness. Unfortunately, though the randomization of the images worked, I could not get the link to work -- either the image opened modal windows for all three possible images, one image (which might be the right or wrong one), or none. So I eliminated the randomization effect and made #left01 a static image again. I kept the unsuccessful attempts as a comment in the .js file in case I want to go back and explore it further.
 
 #left01 {
   background-color: white;
 }
+*/
+
+#left01 {
+  background: url('../images/object-donutphone-200.png');
+}
 
 #left02 {
-  background: url('../images/object-atari-200.png');
+  background: url('../images/object-teacup-200.png');
 }
 
 #left03 {
@@ -100,85 +103,91 @@ height: 200px;
 }
 
 .popup_img {
-  height: 350px;
+  height: 300px;
   width: 100%;
   background-repeat: no-repeat;
 }
 
 .popup_txt p {
-  margin: 30px 0 10px 0;
+  margin: 15px 0 10px 0;
   font-family: Calibri;
   font-size: 0.8em;
   line-height: 1.1em;
 }
 
 #popup-lettera-img {
-  background: url('../images/object-lettera-350.jpg');
+  background: url('../images/object-lettera-350.jpg') center bottom;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 #popup-atari-img {
-  background: url('../images/object-atari-300.jpg');
+  background: url('../images/object-atari-300.jpg') center bottom;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 #popup-donutphone-img {
-  background: url('../images/object-donutphone-350.jpg');
+  background: url('../images/object-donutphone-350.jpg') center bottom;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 #popup-jfk-img {
-  background: url('../images/object-jfk-250.jpg');
+  background: url('../images/object-jfk-250.jpg') center bottom;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 #popup-juicysalif-img {
-  background: url('../images/object-juicysalif-250.jpg');
+  background: url('../images/object-juicysalif-250.jpg') center bottom;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 #popup-pickle-img {
-  background: url('../images/object-pickle-285.jpg');
+  background: url('../images/object-pickle-285.jpg') center bottom;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 #popup-praxis-img {
-  background: url('../images/object-praxis-350.jpg');
+  background: url('../images/object-praxis-350.jpg') center bottom;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 #popup-readymade-img {
-  background: url('../images/object-readymade-220.jpg');
+  background: url('../images/object-readymade-220.jpg') center bottom;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 #popup-sweetie-img {
-  background: url('../images/object-sweetie-300.jpg');
+  background: url('../images/object-sweetie-300.jpg') center bottom;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 #popup-teacup-img {
-  background: url('../images/object-teacup-300.jpg');
+  background: url('../images/object-teacup-300.jpg') center bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#popup-ericofon-img {
+  background: url('../images/object-ericofon-350.jpg') center bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#popup-kodak-img {
+  background: url('../images/object-kodak-350.jpg') center bottom;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 
-
-.placeholder {
-  width: 1px;
-  height: 1px;
-  background-color: white;
-}
 
 .circlemobilewrapper {
   display: none;
@@ -189,7 +198,6 @@ height: 200px;
   opacity: 0;
   height: 1px;
 }
-
 
 .invisible {
   opacity: 0;
@@ -346,6 +354,13 @@ blockquote {
   margin: 0 0 0 0;
 }
 
+.popup {
+  width: 80%;
+  height: 80%;
+  top: 6%;
+  left: 6%;
+}
+
 
 }
 /* ----------------- End Grid for small break point ----------------- */
@@ -426,6 +441,13 @@ blockquote {
 .bodycopyfirst { 
   margin: 100px 50px 0 50px;
 } 
+
+.popup {
+  width: 80%;
+  height: 80%;
+  top: 6%;
+  left: 6%;
+}
 
 
 }
